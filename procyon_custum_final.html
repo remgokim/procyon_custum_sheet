@@ -194,7 +194,7 @@
 			</div>
 			<div class="sheet-col45">
 				<div class="sheet-text sheet-label">
-					<span  style="margin: 0px; width: 50px; height: 20px;" class="sheet-title">혈통:</span>
+					<span  style="margin-bottom: 5px; width: 50px; height: 20px;" class="sheet-title">혈통:</span>
 					<select style="color: #81ebfb; background-color: #102536; margin: 0px; width: 150px; height: 25px;" title="Choose source" name="attr_generate_background">
 					<option selected="selected" value="hegemony">헤게모니</option>
 					<option value="space">우주인</option>
@@ -206,7 +206,7 @@
 				</div>
 				<input type="hidden" name="attr_background" value="">
 				<div class="sheet-text sheet-label">
-					<span style="margin: 0px; width: 50px; height: 20px;" class="sheet-title">출신</span>
+					<span style="margin-top: 5px; width: 50px; height: 20px;" class="sheet-title">출신</span>
 					<select style="color: #81ebfb; background-color: #102536; margin: 0px; width: 150px; height: 25px;" title="Choose source" name="attr_generate_heritage">
                     <option selected="selected" value="Academic">학계</option>
                     <option value="Labor">노동자</option>
@@ -225,7 +225,7 @@
 				</div>
 				<input type="hidden" name="attr_vice_purveyor" value="">
 				<div class="sheet-text sheet-label">
-					<span style="margin: 0px; width: 50px; height: 20px;"  class="sheet-title">악습 / Purveyor</span>
+					<span style="margin-top: 5px; width: 50px; height: 20px;"  class="sheet-title">악습 / Purveyor</span>
 					<select style="color: #81ebfb; background-color: #102536; margin: 0px; width: 150px; height: 25px;" title="Choose source" name="attr_generate_source_character">
                     <option selected="selected" value="Faith">신앙</option>
                     <option value="Gambling">도박</option>
@@ -236,7 +236,7 @@
                     <option value="Weird">기괴</option>
                     </select>
                 </div>
-				<button type="roll" name="roll_vice" class="sheet-vicebutton" value='&{template:bitd} {{charname=@{character_name}}} {{subtitle=(who currently has @{stress} stress) indulges}} {{vice=1}} {{title-vice=1}} {{roll1=[[[[{[[@{vice}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{vice}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{vice}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{vice}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{vice}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{vice}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{vice}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{vice}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{vice}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{vice}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{vice}+@{bonusdice}-10}]],1}kl1]]d6]]}}  {{zerodice=[[[[{[[1-@{vice}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{vice}-@{bonusdice}]],1}kl1]]d6]]}}'>악습 즐기기</button>
+				<button type="roll" name="roll_vice" class="sheet-vicebutton" value='&{template:bitd} {{charname=@{character_name}}} {{subtitle=(이 인물의 현재 스트레스는: @{stress}) indulges}} {{vice=1}} {{title-vice=1}} {{roll1=[[[[{[[@{vice}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{vice}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{vice}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{vice}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{vice}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{vice}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{vice}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{vice}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{vice}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{roll10=[[[[{[[@{vice}+@{bonusdice}-9}]],1}kl1]]d6]]}} {{roll11=[[[[{[[@{vice}+@{bonusdice}-10}]],1}kl1]]d6]]}}  {{zerodice=[[[[{[[1-@{vice}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{vice}-@{bonusdice}]],1}kl1]]d6]]}}'>악습 즐기기</button>
 				<input type="hidden" value="0" name="attr_vice"/>
 				<div class="sheet-auto-expand">
 					<span name="attr_traumra1"></span>
@@ -281,7 +281,7 @@
 						<input type="checkbox" name="attr_trauma_paranoid" value="1"><span>망상</span>
 					</label>
 				</div>
-				<div class="sheet-flex">
+				<div class="sheet-flex"  style="margin-bottom: 30px;">
 					<label class="sheet-text-button">
 						<input type="checkbox" name="attr_trauma_reckless" value="1"><span>무모</span>
 					</label>
@@ -566,7 +566,7 @@
 					</button>
 					<input type="hidden" name="attr_insight" value="0"/>
 					<input type="hidden" name="attr_insight_xp_max" value="6"/>
-					<div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_insight_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="6"/><span></span>
+					<p>xp:</p><div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_insight_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_insight_xp" value="6"/><span></span>
 					</div>
 				</div>
 				<div class="sheet-actions sheet-col100">
@@ -577,7 +577,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_doctor" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_doctor" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Doctor" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-doctor=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{doctor}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{doctor}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{doctor}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{doctor}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{doctor}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{doctor}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{doctor}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{doctor}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{doctor}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{doctor}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{doctor}-@{bonusdice}]],1}kl1]]d6]]}}">의료
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Doctor" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-doctor=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{doctor}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{doctor}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{doctor}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{doctor}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{doctor}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{doctor}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{doctor}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{doctor}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{doctor}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{doctor}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{doctor}-@{bonusdice}]],1}kl1]]d6]]}}">의료
 						</button>
 					</div>
 					<!-- Hack -->
@@ -587,7 +587,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_hack" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_hack" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Hack" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-hack=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{hack}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{hack}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{hack}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{hack}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{hack}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{hack}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{hack}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{hack}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{hack}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{hack}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{hack}-@{bonusdice}]],1}kl1]]d6]]}}">해킹
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Hack" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-hack=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{hack}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{hack}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{hack}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{hack}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{hack}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{hack}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{hack}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{hack}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{hack}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{hack}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{hack}-@{bonusdice}]],1}kl1]]d6]]}}">해킹
 						</button>
 					</div>
 					<!-- Rig -->
@@ -597,7 +597,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_rig" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_rig" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Rig" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-rig=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{rig}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{rig}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{rig}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{rig}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{rig}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{rig}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{rig}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{rig}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{rig}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{rig}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{rig}-@{bonusdice}]],1}kl1]]d6]]}}">공작
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Rig" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-rig=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{rig}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{rig}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{rig}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{rig}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{rig}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{rig}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{rig}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{rig}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{rig}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{rig}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{rig}-@{bonusdice}]],1}kl1]]d6]]}}">공작
 						</button>
 					</div>
 					<!-- Study -->
@@ -607,7 +607,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_study" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_study" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Study" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-study=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{study}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{study}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{study}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{study}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{study}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{study}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{study}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{study}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{study}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{study}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{study}-@{bonusdice}]],1}kl1]]d6]]}}">조사
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Study" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-study=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{study}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{study}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{study}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{study}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{study}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{study}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{study}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{study}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{study}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{study}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{study}-@{bonusdice}]],1}kl1]]d6]]}}">조사
 						</button>
 					</div>
 				</div>
@@ -619,7 +619,7 @@
 					</button>
 					<input type="hidden" name="attr_prowess" value="0"/>
 					<input type="hidden" name="attr_prowess_xp_max" value="6"/>
-					<div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_prowess_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="6"/><span></span>
+					<p>xp:</p><div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_prowess_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_prowess_xp" value="6"/><span></span>
 					</div>
 				</div>
 				<div class="sheet-actions sheet-col100">
@@ -630,7 +630,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_helm" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_helm" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Helm" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-helm=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{helm}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{helm}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{helm}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{helm}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{helm}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{helm}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{helm}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{helm}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{helm}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{helm}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{helm}-@{bonusdice}]],1}kl1]]d6]]}}">조타
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Helm" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-helm=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{helm}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{helm}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{helm}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{helm}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{helm}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{helm}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{helm}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{helm}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{helm}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{helm}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{helm}-@{bonusdice}]],1}kl1]]d6]]}}">조타
 						</button>
 					</div>
 					<!-- Scramble -->
@@ -640,7 +640,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_scramble" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_scramble" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Scramble" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-scramble=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{scramble}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{scramble}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{scramble}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{scramble}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{scramble}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{scramble}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{scramble}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{scramble}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{scramble}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{scramble}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{scramble}-@{bonusdice}]],1}kl1]]d6]]}}">기동
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Scramble" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-scramble=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{scramble}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{scramble}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{scramble}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{scramble}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{scramble}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{scramble}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{scramble}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{scramble}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{scramble}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{scramble}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{scramble}-@{bonusdice}]],1}kl1]]d6]]}}">기동
 						</button>
 					</div>
 					<!-- Scrap -->
@@ -650,7 +650,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_scrap" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_scrap" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Scrap" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-scrap=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{scrap}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{scrap}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{scrap}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{scrap}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{scrap}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{scrap}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{scrap}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{scrap}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{scrap}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{scrap}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{scrap}-@{bonusdice}]],1}kl1]]d6]]}}">싸움
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Scrap" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-scrap=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{scrap}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{scrap}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{scrap}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{scrap}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{scrap}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{scrap}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{scrap}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{scrap}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{scrap}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{scrap}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{scrap}-@{bonusdice}]],1}kl1]]d6]]}}">싸움
 						</button>
 					</div>
 					<!-- Skulk -->
@@ -660,7 +660,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_skulk" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_skulk" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Skulk" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-skulk=1}}  {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{skulk}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{skulk}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{skulk}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{skulk}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{skulk}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{skulk}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{skulk}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{skulk}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{skulk}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{skulk}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{skulk}-@{bonusdice}]],1}kl1]]d6]]}}">잠행
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Skulk" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-skulk=1}}  {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{skulk}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{skulk}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{skulk}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{skulk}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{skulk}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{skulk}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{skulk}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{skulk}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{skulk}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{skulk}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{skulk}-@{bonusdice}]],1}kl1]]d6]]}}">잠행
 						</button>
 					</div>
 				</div>
@@ -672,7 +672,7 @@
 					</button>
 					<input type="hidden" name="attr_resolve" value="0"/>
 					<input type="hidden" name="attr_resolve_xp_max" value="6"/>
-					<div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_resolve_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="6"/><span></span>
+					<p>xp:</p><div class="sheet-attribute-xp-box"><input class="sheet-tooth sheet-zero" type="radio" name="attr_resolve_xp" value="0" checked="checked"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="1"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="2"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="3"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="4"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="5"/><span></span><input class="sheet-tooth sheet-xptooth" type="radio" name="attr_resolve_xp" value="6"/><span></span>
 					</div>
 				</div>
 				<div class="sheet-actions sheet-col100">
@@ -683,7 +683,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_attune" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_attune" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Attune" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-attune=1}}  {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{attune}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{attune}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{attune}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{attune}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{attune}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{attune}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{attune}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{attune}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{attune}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{attune}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{attune}-@{bonusdice}]],1}kl1]]d6]]}}">조율
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Attune" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-attune=1}}  {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{attune}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{attune}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{attune}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{attune}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{attune}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{attune}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{attune}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{attune}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{attune}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{attune}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{attune}-@{bonusdice}]],1}kl1]]d6]]}}">조화
 						</button>
 					</div>
 					<!-- Command -->
@@ -693,7 +693,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_command" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_command" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Command" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-command=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{command}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{command}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{command}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{command}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{command}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{command}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{command}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{command}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{command}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{command}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{command}-@{bonusdice}]],1}kl1]]d6]]}}">명령
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Command" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-command=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{command}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{command}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{command}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{command}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{command}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{command}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{command}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{command}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{command}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{command}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{command}-@{bonusdice}]],1}kl1]]d6]]}}">명령
 						</button>
 					</div>
 					<!-- Consort -->
@@ -703,7 +703,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_consort" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_consort" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Consort" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-consort=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{consort}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{consort}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{consort}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{consort}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{consort}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{consort}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{consort}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{consort}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{consort}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{consort}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{consort}-@{bonusdice}]],1}kl1]]d6]]}}">친교
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Consort" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-consort=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{consort}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{consort}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{consort}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{consort}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{consort}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{consort}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{consort}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{consort}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{consort}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{consort}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{consort}-@{bonusdice}]],1}kl1]]d6]]}}">친교
 						</button>
 					</div>
 					<!-- Sway -->
@@ -713,7 +713,7 @@
 						<div class="sheet-divider"></div>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_sway" value="2"/><span></span>
 						<input class="sheet-triangle sheet-fakeradio" type="checkbox" name="attr_sway" value="3"/><span></span>
-						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Sway" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-sway=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|표준적인|제한된|좋은|최상의}}} {{roll1=[[[[{[[@{sway}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{sway}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{sway}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{sway}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{sway}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{sway}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{sway}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{sway}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{sway}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{sway}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{sway}-@{bonusdice}]],1}kl1]]d6]]}}">현혹
+						<button class="sheet-rollbutton sheet-actionbutton" type="roll" name="roll_Sway" value="&{template:bitd} {{charname=@{character_name}}} {{action=1}} {{subtitle=rolls}} {{title-sway=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{[[@{sway}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{sway}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{sway}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{sway}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{sway}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{sway}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{sway}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{sway}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{sway}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{sway}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{sway}-@{bonusdice}]],1}kl1]]d6]]}}">현혹
 						</button>
 					</div>
 				</div>
@@ -726,7 +726,7 @@
 					<div class="sheet-bonusdieplus sheet-flex-centerall">+</div>
 					<div class="sheet-bonusdietext">
 						<div class="sheet-smallcaps"></div>
-						<div>묘수 사용(2개의 <span name="attr_setting_stress_label"></span>를 받기) 또는</div>
+						<div>분발(2개의 <span name="attr_setting_stress_label"></span>) 또는</div>
 						<div class="sheet-smallcaps">악마와의 거래 받아들이기</div>
 					</div>
 				</div>
@@ -769,7 +769,7 @@
 				</div>
 			</fieldset>
 		</div>
-		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes"></textarea>
+		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes" style="font-size: 10px;"></textarea>
 	</div>
 </div>
 
@@ -815,19 +815,19 @@
 						</label>
 						<span>—</span>
 						<label class="sheet-text-button">
-							<input type="checkbox" name="attr_ship_size" value="freighter"><span>프레이터</span>
+							<input type="checkbox" name="attr_ship_size" value="freighter"><span>프레이터(소형)</span>
 						</label>
 						<span>—</span>
 						<label class="sheet-text-button">
-							<input type="checkbox" name="attr_ship_size" value="corvette"><span>코르벳</span>
+							<input type="checkbox" name="attr_ship_size" value="corvette"><span>코르벳(중형)</span>
 						</label>
 						<span>—</span>
 						<label class="sheet-text-button">
-							<input type="checkbox" name="attr_ship_size" value="frigate"><span>프리게이트</span>
+							<input type="checkbox" name="attr_ship_size" value="frigate"><span>프리게이트(대형)</span>
 						</label>
 						<span>—</span>
 						<label class="sheet-text-button">
-							<input type="checkbox" name="attr_ship_size" value="dreadnaught"><span>드레드노티</span>
+							<input type="checkbox" name="attr_ship_size" value="dreadnaught"><span>드레드노티(초대형)</span>
 						</label>
 					</div>
 				</div>
@@ -970,7 +970,7 @@
 						</div>
 					</div>
 					<div class="sheet-blackheader sheet-skips sheet-flex">
-						<span class="sheet-label">Skips</span>
+						<span class="sheet-label">미납</span>
 						<div class="sheet-module-tick-box">
 							<input type="radio" value="0" name="attr_sys_skips" class="sheet-zero sheet-tooth" checked/><span></span><input type="radio" value="1" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="2" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="3" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="4" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span>
 						</div>
@@ -1143,12 +1143,13 @@
 <div class="sheet-tab sheet-type-faction">
 	<!-- SYSTEMS -->
 	<div class="sheet-factiontitle sheet-col100">
-		<input class="sheet-label" type="text" name="attr_systems_title" value="Systems"/>
+		<input class="sheet-label" type="text" name="attr_systems_title" value="항성계"/>
 	</div>
 	<div class="sheet-systems sheet-flex-layout">
 		<div class="sheet-col24b">
 			<input type="checkbox" name="attr_expand1" value="1" class="sheet-expand"/><span></span>
 			<input type="text"  spellcheck="false" value="린" class="sheet-label" name="attr_system1" />
+			<input type="text"  spellcheck="false" value=": 워런, 코브, SB-176">
 			<div class="sheet-col100 sheet-heat sheet-flex-layout">
 				<div class="sheet-blackheader sheet-heat1">
 					<div class="sheet-label">열기</div>
@@ -1169,6 +1170,7 @@
 		<div class="sheet-col24b">
 			<input type="checkbox" name="attr_expand2" value="1" class="sheet-expand"/><span></span>
 			<input type="text" spellcheck="false" value="홀트" class="sheet-label" name="attr_system2" />
+			<input type="text"  spellcheck="false" value=": 멤, 보스, 손한드라">
 			<div class="sheet-col100 sheet-heat sheet-flex-layout">
 				<div class="sheet-blackheader sheet-heat1">
 					<div class="sheet-label">열기</div>
@@ -1189,6 +1191,7 @@
 		<div class="sheet-col24b">
 			<input type="checkbox" name="attr_expand3" value="1" class="sheet-expand"/><span></span>
 			<input type="text" spellcheck="false" value="이오타" class="sheet-label" name="attr_system3" />
+			<input type="text"  spellcheck="false" value=": 리티오스, 아메라스, 인드리">
 			<div class="sheet-col100 sheet-heat sheet-flex-layout">
 				<div class="sheet-blackheader sheet-heat1">
 					<div class="sheet-label">열기</div>
@@ -1209,6 +1212,7 @@
 		<div class="sheet-col24b">
 			<input type="checkbox" name="attr_expand4" value="1" class="sheet-expand"/><span></span>
 			<input type="text" spellcheck="false" value="브렉" class="sheet-label" name="attr_system4" />
+			<input type="text"  spellcheck="false" value=": 나이트폴, 시마야, 아케티">
 			<div class="sheet-col100 sheet-heat sheet-flex-layout">
 				<div class="sheet-blackheader sheet-heat1">
 					<div class="sheet-label">열기</div>
@@ -1234,7 +1238,7 @@
 	</div>
 	<div class="sheet-flex-layout">
 		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions1_header" value="헤게모니"/><span>등급</span><span>지위</span><span>일</span></div>
+			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions1_header" value="헤게모니"/><span>등급</span><span>호감</span><span>일</span></div>
 			<fieldset class="repeating_factions1">
 				<div class="sheet-faction sheet-flex-wrap">
 					<input type="checkbox" name="attr_expand" value="1" class="sheet-expand"/><span></span>
@@ -1244,7 +1248,7 @@
 			</fieldset>
 		</div>
 		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions2_header" value="범죄 조직"/><span>등급</span><span>지위</span><span>일</span></div>
+			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions2_header" value="범죄 조직"/><span>등급</span><span>호감</span><span>일</span></div>
 			<fieldset class="repeating_factions2">
 				<div class="sheet-faction sheet-flex-wrap">
 					<input type="checkbox" name="attr_expand" value="1" class="sheet-expand"/><span></span>
@@ -1254,7 +1258,7 @@
 			</fieldset>
 		</div>
 		<div class="sheet-col24b sheet-white-repcontrol">
-			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions3_header" value="기이"/><span>등급</span><span>지위</span><span>일</span></div>
+			<div class="sheet-factions-header sheet-flex-center sheet-label"><input class="sheet-label" type="text" name="attr_factions3_header" value="기이"/><span>등급</span><span>호감</span><span>일</span></div>
 			<fieldset class="repeating_factions3">
 				<div class="sheet-faction sheet-flex-wrap">
 					<input type="checkbox" name="attr_expand" value="1" class="sheet-expand"/><span></span>
@@ -1267,11 +1271,11 @@
 			<div class="sheet-warblurb">
 				<div class="sheet-label">일거리</div>
 				<ul>
-					<li class="sheet-nondot">만약 파벌로부터 일을 받는 다면, 현재 상태 및 마지막으로 상태가 변경된 이후 해당 파벌에 대해 수행한 작업 수에 따라 해당 파벌의 지위를 얻을 수 있습니다.</li>
-					<li>지위를 -1에서 0으로 향상: 1 개의 일</li>
-					<li>지위를 0에서 1으로 향상: 1 개의 일</li>
-					<li>지위를 1에서 2으로 향상: 2 개의 일</li>
-					<li>지위를 2에서 3으로 향상: 3 개의 일</li>
+					<li class="sheet-nondot">만약 파벌로부터 일을 받는 다면, 현재 상태 및 마지막으로 상태가 변경된 이후 해당 파벌에 대해 수행한 작업 수에 따라 해당 파벌의 호감을 얻을 수 있습니다.</li>
+					<li>호감을 -1에서 0으로 향상: 1 개의 일</li>
+					<li>호감을 0에서 1으로 향상: 1 개의 일</li>
+					<li>호감을 1에서 2으로 향상: 2 개의 일</li>
+					<li>호감을 2에서 3으로 향상: 3 개의 일</li>
 				</ul>
 			</div>
 			<div class="sheet-warblurb">
@@ -1329,7 +1333,7 @@
 		<!-- End legacy section -->
 		{{#rollGreater() zerodice 0}}
 			<div class="sheet-zerodice1">{{zerodice}}</div>
-			<div class="sheet-zerodice2">Zero Dice — take the lowest result above</div>
+			<div class="sheet-zerodice2">Zero Dice — 위 결과 중 낮은 값</div>
 		{{/rollGreater() zerodice 0}}
 	</div>
 	{{#position}}<div class="sheet-roll-position">{{position}}</div>{{/position}}{{#effect}}<div class="sheet-roll-effect">{{effect}}</div>{{/effect}}{{#resist}}{{^short}}<div class="sheet-roll-instructions"><em> 6 스트레스에서 가장 높은 주사위 결과를 뺀 결과를 겪습니다. </em> 저항판정에 크리티컬이 나오면 스트레스 1 개를 제거합니다.</div>{{/short}}{{/resist}}{{#vice}}{{^short}}

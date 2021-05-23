@@ -1231,7 +1231,7 @@
 			<textarea spellcheck="false" name="attr_notes4" placeholder="System notes"></textarea>
 		</div>
 	</div>
-	<textarea spellcheck="false" class="sheet-notes" name="attr_notes11" placeholder="celestrial system Notes" style="font-size: 12px; width: 700px; height: 80px; margin-bottom: 20px;"></textarea>
+	<textarea spellcheck="false" class="sheet-notes" name="attr_notes11" placeholder="celestrial system Notes" style="font-size: 12px; width: 800px; height: 80px; margin-bottom: 20px;"></textarea>
 	<!-- FACTIONS -->
 	<div class="sheet-factiontitle sheet-flex">
 		<input class="sheet-label" type="text" name="attr_factions_title" value="파벌"/>
@@ -1270,9 +1270,9 @@
 		</div>
 		<div class="sheet-col24b sheet-white-repcontrol">
 			<div class="sheet-warblurb">
-				<div class="sheet-label">일거리</div>
+				<div class="sheet-label">임무</div>
 				<ul>
-					<li class="sheet-nondot">만약 파벌로부터 일을 받는 다면, 현재 상태 및 마지막으로 상태가 변경된 이후 해당 파벌에 대해 수행한 작업 수에 따라 해당 파벌의 호감을 얻을 수 있습니다.</li>
+					<li class="sheet-nondot">만약 파벌로부터 임무를 받는다면, 현재 상태 및 마지막으로 상태가 변경된 이후 해당 파벌에 대해 수행한 작업 수에 따라 해당 파벌의 호감을 얻을 수 있습니다.</li>
 					<li>호감을 -1에서 0으로 향상: 1 개의 일</li>
 					<li>호감을 0에서 1으로 향상: 1 개의 일</li>
 					<li>호감을 1에서 2으로 향상: 2 개의 일</li>
@@ -1289,12 +1289,19 @@
 			</div>
 		</div>
 	</div>
-	<textarea spellcheck="false" class="sheet-notes" name="attr_notes12" placeholder="Faction Notes" style="font-size: 12px; width: 700px; height: 70px; margin-bottom: 20px;"></textarea>
+	<div class="sheet-col97 sheet-clocks sheet-def-margin">
+			<div class="sheet-specialheader sheet-label">파벌시계</div>
+			<fieldset class="repeating_clock">
+				<div class="sheet-clock"><input type="text" spellcheck="false" placeholder="시계 종류" name="attr_name" class="sheet-label"/><div class="sheet-clockprogress"><span>Size</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="4" checked/><span>4-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="6"/><span>6-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="8"/><span>8-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-last sheet-longoption" value="12"/><span>12-segment</span><div class="sheet-4clock"><span>Progress</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock1" class="sheet-text-input sheet-last" value="4"/><span>4</span><div class="sheet-clockpicture"></div></div><div class="sheet-6clock"><span>Progress</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock2" class="sheet-text-input sheet-last" value="6"/><span>6</span><div class="sheet-clockpicture"></div></div><div class="sheet-8clock"><span>Progress</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="6"/><span>6</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="7"/><span>7</span><input type="radio" name="attr_clock3" class="sheet-text-input sheet-last" value="8"/><span>8</span><div class="sheet-clockpicture"></div></div><div class="sheet-12clock"><span>Progress</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="6"/><span>6</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="7"/><span>7</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="8"/><span>8</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="9"/><span>9</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="10"/><span>10</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="11"/><span>11</span><input type="radio" name="attr_clock4" class="sheet-text-input sheet-last" value="12"/><span>12</span><div class="sheet-clockpicture"></div></div></div>
+				</div>
+			</fieldset>
+	</div>
+	<textarea spellcheck="false" class="sheet-notes" name="attr_notes12" placeholder="Faction Notes" style="font-size: 12px; width: 800px; height: 70px; margin-bottom: 20px;"></textarea>
 
 	<div class="sheet-missiontitle sheet-col100">
 		<input class="sheet-label" type="text" name="attr_mission_title" value="임무" style="font-size: 24px; color: #81ebfb; font-weight: 600;	width: 60%;"/>
 	</div>
-    <textarea spellcheck="false" class="sheet-notes" name="attr_notes13" placeholder="Mission Notes" style="font-size: 12px; width: 700px; height: 100px;"></textarea>
+    <textarea spellcheck="false" class="sheet-notes" name="attr_notes13" placeholder="Mission Notes" style="font-size: 12px; width: 800px; height: 100px;"></textarea>
 </div>
 </div>
 

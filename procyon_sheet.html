@@ -806,13 +806,13 @@
 		<div class="sheet-def-margin sheet-ship">
 			<div class="sheet-ship-toprow sheet-flex">
 				<div class="sheet-col18 sheet-ship-crew">
-					<div class="sheet-col100 sheet-blackheader sheet-flex">
+					<div class="sheet-col100 sheet-blackheader sheet-flex" style="margin-right: 5px;">
 						<button type="roll" name="roll_crew" class="sheet-rollbutton sheet-crewbutton" value='&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{short=1}} {{title-crew=1}} {{subtitle=roll their}} {{roll1=[[[[{[[@{crew_quality}+@{bonusdice}}]],1}kl1]]d6]]}} {{roll2=[[[[{[[@{crew_quality}+@{bonusdice}-1}]],1}kl1]]d6]]}} {{roll3=[[[[{[[@{crew_quality}+@{bonusdice}-2}]],1}kl1]]d6]]}} {{roll4=[[[[{[[@{crew_quality}+@{bonusdice}-3}]],1}kl1]]d6]]}} {{roll5=[[[[{[[@{crew_quality}+@{bonusdice}-4}]],1}kl1]]d6]]}} {{roll6=[[[[{[[@{crew_quality}+@{bonusdice}-5}]],1}kl1]]d6]]}} {{roll7=[[[[{[[@{crew_quality}+@{bonusdice}-6}]],1}kl1]]d6]]}} {{roll8=[[[[{[[@{crew_quality}+@{bonusdice}-7}]],1}kl1]]d6]]}} {{roll9=[[[[{[[@{crew_quality}+@{bonusdice}-8}]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-@{crew_quality}-@{bonusdice}]],1}kl1]]d6]], [[[[{[[1-@{crew_quality}-@{bonusdice}]],1}kl1]]d6]]}}'>일행수준</button>
 						<input type="radio" class="sheet-tooth sheet-zero" value="0" name="attr_crew_quality"/><span></span><input type="radio" class="sheet-tooth sheet-xptooth" value="1" name="attr_crew_quality"/><span></span><input type="radio" class="sheet-tooth sheet-xptooth" value="2" name="attr_crew_quality"/><span></span><input type="radio" class="sheet-tooth sheet-xptooth" value="3" name="attr_crew_quality"/><span></span>
 					</div>
 				</div>
 				<div class="sheet-col82 sheet-ship-size sheet-flex-layout">
-					<div class="sheet-col18 sheet-blackheader sheet-label">함선 크기</div>
+					<div class="sheet-col18 sheet-blackheader sheet-label" >함선 크기</div>
 					<div class="sheet-col82 sheet-blackborder sheet-flex">
 						<label class="sheet-text-button">
 							<input type="checkbox" name="attr_ship_size" value="personal"><span>개인용</span>
@@ -1028,7 +1028,7 @@
 				</fieldset>
 			</div>
 		</div>
-		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes"></textarea>
+		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes" style="width : 450px;"></textarea>
 	</div>
 	<div class="sheet-col45 sheet-flex-wrap">
 		<!-- SHIP ABILITIES -->
@@ -1128,7 +1128,7 @@
 					</div>
 				</fieldset>
 			</div>
-			<button type="roll" name="roll_Fortune" class="sheet-fortunebutton" value='&{template:bitd} {{charname=@{character_name}}} {{fortune=1}} {{subtitle=rolls}} {{title-fortune=1}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{Notes}}}'>Roll Fortune</button>
+			<button type="roll" name="roll_Fortune" class="sheet-fortunebutton" value='&{template:bitd} {{charname=@{character_name}}} {{fortune=1}} {{subtitle=rolls}} {{title-fortune=1}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{Notes}}}' style="margin-up: 10px;">Roll Fortune</button>
 		</div>
 		<div class="sheet-advancement">
 			<div class="sheet-advancement-header sheet-flex sheet-blackheader">

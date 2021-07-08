@@ -126,9 +126,9 @@
 	<div class="sheet-col50 sheet-setting-character"><input type="text" spellcheck="false" name="attr_setting_trauma_label" value="트라우마"/><span>Label to use for Trauma</span></div>
 	<div class="sheet-settings-load sheet-col100 sheet-setting-character">
 		<span>하중: </span>
-		<input type="number" name="attr_setting_load_l" value="3"/> <span>light</span>
-		<input type="number" name="attr_setting_load_n" value="5"/> <span>normal</span>
-		<input type="number" name="attr_setting_load_h" value="6"/> <span>heavy</span>
+		<input type="number" name="attr_setting_load_l" value="3"/> <span>가벼운</span>
+		<input type="number" name="attr_setting_load_n" value="5"/> <span>보통</span>
+		<input type="number" name="attr_setting_load_h" value="6"/> <span>무거운</span>
 	</div>
 	<div class="sheet-col100 sheet-setting-character sheet-setting-ship sheet-setting-faction">
 		<input type="checkbox" name="attr_setting_flexwidth" class="sheet-checkbox" value="1"><span></span><span>창 크기에 따라 시트 크기 조절하기</span>
@@ -143,7 +143,7 @@
 	<div class="sheet-col55 sheet-flex-layout">
 		<div class="sheet-col55 sheet-scumlogo"></div>
 		<div class="sheet-col45 sheet-header">
-			<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_crew"/>
+			<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_name"/>
 				<div class="sheet-text sheet-label sheet-title">이름</div>
 		</div>
 	</div>
@@ -158,15 +158,15 @@
 	<div class="sheet-col55">
 		<div class="sheet-flex sheet-header">
 			<div class="sheet-col55">
-				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_name"/>
+				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_alias"/>
 				<div class="sheet-text sheet-label sheet-title">별명</div>
 			</div>
 			<div class="sheet-col45">
-				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_alias"/>
+				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_look"/>
 				<div class="sheet-text sheet-label sheet-title">나이/성별</div>
 			</div>
 			<div class="sheet-col55">
-				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_look"/>
+				<input style="margin: 0px; width: 153px; height: 25px;" type="text" spellcheck="false" name="attr_char"/>
 				<div class="sheet-text sheet-label sheet-title">성격</div>
 			</div>
 			<div class="sheet-col45">
@@ -193,9 +193,9 @@
 				</div>
 			</div>
 			<div class="sheet-col45">
-				<div class="sheet-text sheet-label">
+				<div class="sheet-text sheet-label" style="padding-bottom : 10px;">
 					<span  style="margin-bottom: 5px; width: 50px; height: 20px;" class="sheet-title">혈통:</span>
-					<select style="color: #81ebfb; background-color: #102536; margin: 0px; width: 150px; height: 25px;" title="Choose source" name="attr_generate_background">
+					<select style="color: #81ebfb; background-color: #102536; margin: 0px; width: 150px; height: 25px; " title="Choose source" name="attr_generate_background">
 					<option selected="selected" value="hegemony">헤게모니</option>
 					<option value="space">우주인</option>
 					<option value="settler">개척민</option>
@@ -244,7 +244,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sheet-stress sheet-flex-layout">
+		<div class="sheet-stress sheet-flex-layout" style="margin-bottom: 10px; padding-bottom: 50px;">
 			<div class="sheet-blackheader sheet-stress1">
 				<div class="sheet-label">
 					<span name="attr_setting_stress_label"></span>
@@ -281,7 +281,7 @@
 						<input type="checkbox" name="attr_trauma_paranoid" value="1"><span>망상</span>
 					</label>
 				</div>
-				<div class="sheet-flex"  style="margin-bottom: 30px;">
+				<div class="sheet-flex" >
 					<label class="sheet-text-button">
 						<input type="checkbox" name="attr_trauma_reckless" value="1"><span>무모</span>
 					</label>
@@ -302,7 +302,7 @@
 		</div>
 		<div class="sheet-auto-expand">
 			<span name="attr_traumra2"></span>
-			<textarea type="margin: 0px; width:100; height:20;" spellcheck="false" name="attr_trauma2"></textarea>
+			<textarea type=" width:100; height:20;" spellcheck="false" name="attr_trauma2"></textarea>
 		</div>
 		<div class="sheet-flex-layout sheet-def-margin">
 			<!-- HARM -->
@@ -399,7 +399,7 @@
 		<div class="sheet-advancement">
 			<div class="sheet-advancement-header sheet-flex sheet-blackheader">
 				<div class="sheet-label">XP 체크:</div>
-				<div class="sheet-label">Playbook Advancement</div>
+				<div class="sheet-label">플레이북 향상</div>
 				<div class="sheet-advancement-xpholder">
 					<!-- XP DO NOT SPACE -->
 					<input type="radio" value="0" name="attr_playbook_xp" class="sheet-tooth sheet-zero" checked/><span></span><input type="radio" value="1" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="2" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="3" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="4" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="5" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="6" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="7" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="8" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span>
@@ -786,17 +786,21 @@
 	</div>
 	<div class="sheet-col55">
 		<div class="sheet-header sheet-flex-wrap">
-			<div class="sheet-col55">
+			<div class="sheet-col55" style="margin: 10px; width: 200px; height: 25px; padding:3px;">
+				<input type="text" spellcheck="false" placeholder="Ship Name" name="attr_ship_name"/>
+				<div class="sheet-text sheet-label sheet-title">함선이름</div>
+			</div>
+			<div class="sheet-col45" style="margin: 10px; width: 250px; height: 25px; padding:3px;">
 				<input type="text" spellcheck="false" placeholder="Ship Designation" name="attr_ship_designation"/>
 				<div class="sheet-text sheet-label sheet-title">디자인</div>
 			</div>
-			<div class="sheet-col45">
+			<div class="sheet-col55" style="margin: 10px; width: 200px; height: 25px; padding:3px;">
 				<input type="text" spellcheck="false" name="attr_reputation"/>
 				<div class="sheet-text sheet-label sheet-title">명성</div>
 			</div>
-			<div class="sheet-col100">
+			<div class="sheet-col45" style="margin: 10px; width: 250px; height: 25px; padding:3px;">
 				<input type="text" spellcheck="false" name="attr_lair"/>
-				<div class="sheet-text sheet-label sheet-title">색깔/외관</div>
+				<div class="sheet-text sheet-label sheet-title">색/외관</div>
 			</div>
 		</div>
 		<div class="sheet-def-margin sheet-ship">
@@ -846,9 +850,9 @@
 								<input type="radio" value="0" name="attr_sys1_mod_dam" class="sheet-zero sheet-tooth" checked/><span></span><input type="radio" value="1" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="2" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="3" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="4" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth"/><span></span>
 							</div>
 						</div>
-					</div>
+					</div> 
 					<div class="sheet-modulelist sheet-col100">
-						<div class="sheet-item">
+						<div class="sheet-item" >
 							<input type="checkbox" name="attr_sys1_mod_1_check" value="1" class="sheet-checkbox"/><span></span>
 							<input type="text" spellcheck="false" class="sheet-itemname" placeholder="_____________________" name="attr_sys1_mod_1_desc"/>
 						</div>
@@ -869,18 +873,18 @@
 				<!-- EXPOSITION COIN AND DEBT -->
 				<div class="sheet-ship-expo-cred sheet-col31">
 					<div class="sheet-ship-cred">
-						<div class="sheet-crewcred">
-							<div class="sheet-blackheader sheet-flex">
+						<div class="sheet-crewcred"> 
+							<div class="sheet-blackheader sheet-flex" >
 								<div class="sheet-label">크레드</div>
 								<div class="sheet-label">금고</div>
 							</div>
-							<div class="sheet-creds sheet-flex-center">
+							<div class="sheet-creds sheet-flex-center" >
 								<input type="radio" value="0" name="attr_crewcoin" class="sheet-zero" checked/><span></span><input type="radio" value="1" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="2" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="3" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="4" name="attr_crewcoin" class="sheet-radiobox"/><span></span>
 								<div class="sheet-credbar"></div>
 								<input type="radio" value="5" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span>
 							</div>
 						</div>
-						<div class="sheet-crewcred">
+						<div class="sheet-crewcred" >
 							<div class="sheet-blackheader sheet-label">빚</div>
 							<div class="sheet-debt sheet-flex-center">
 								<input type="radio" value="0" name="attr_shipdebt" class="sheet-zero" checked/><span></span><input type="radio" value="1" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="2" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="3" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="4" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="5" name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="6" name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="7" name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="8" name="attr_shipdebt" class="sheet-radiobox "/><span></span>
@@ -889,8 +893,8 @@
 					</div>
 				</div>
 				<!-- SYSTEM 2 -->
-				<div class="sheet-ship-system sheet-col31">
-					<div class="sheet-blackheader sheet-flex">
+				<div class="sheet-ship-system sheet-col31" >
+					<div class="sheet-blackheader sheet-flex" >
 						<input type="text" spellcheck="false" name="attr_system2_desc" class="sheet-label" placeholder="System 2"/>
 						<div class="sheet-module-tick-box">
 							<div class="sheet-systemteeth">
@@ -901,7 +905,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sheet-modulelist sheet-col100">
+					<div class="sheet-modulelist sheet-col100" >
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_sys2_mod_1_check" value="1" class="sheet-checkbox"/><span></span>
 							<input type="text" spellcheck="false" class="sheet-itemname" placeholder="_____________________" name="attr_sys2_mod_1_desc"/>
@@ -921,18 +925,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="sheet-col31 sheet-ship-gambits">
-				<div class="sheet-blackheader sheet-label">묘수</div>
-				<div class="sheet-ship-gambitexpo">
-					<span>시작시 <span class="sheet-label sheet-bold" placeholder="2" name="attr_defaultgambit"></span> 초기 묘수</span>
-					<div class="sheet-creds sheet-gambits">
-						<input type="radio" value="0" name="attr_gambits" class="sheet-zero" checked/><span></span><input type="radio" value="1" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="2" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="3" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="4" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="5" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span>
-					</div>
-				</div>
-			</div>
+			<div class="sheet-ship-middlerow sheet-flex-layout">
+			<!-- Roll system -->
+			    <div class="sheet-ship-gambits sheet-col31" style=" padding: 10px;">
+			        <button type="roll" name="roll_System" type="roll"  value='&{template:bitd} {{charname=@{character_name}}} {{subtitle=Roll System}} {{title-sys=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{시스템}}}' style="color: #81ebfb;">함선 시스템 굴림</button>
+	        	</div>
+		    	<div class="sheet-col31 sheet-ship-gambits" >
+			    	<div class="sheet-blackheader sheet-label">묘수</div>
+			    	<div class="sheet-ship-gambitexpo">
+				    	<span>시작시 <span class="sheet-label sheet-bold" placeholder="2" name="attr_defaultgambit"></span> 초기 묘수</span>
+				    	<div class="sheet-creds sheet-gambits">
+					    	<input type="radio" value="0" name="attr_gambits" class="sheet-zero" checked/><span></span><input type="radio" value="1" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="2" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="3" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="4" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="5" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span>
+				    	</div>
+			    	</div>
+		     	</div>
+		    </div>
 			<div class="sheet-ship-bottomrow sheet-flex-layout">
 				<!-- SYSTEM 3 -->
-				<div class="sheet-ship-system sheet-col31">
+				<div class="sheet-ship-system sheet-col31" >
 					<div class="sheet-blackheader sheet-flex">
 						<input type="text" spellcheck="false" name="attr_system3_desc" class="sheet-label" placeholder="System 3"/>
 						<div class="sheet-module-tick-box">
@@ -965,7 +975,7 @@
 						<div class="sheet-blackheader sheet-label">유지비</div>
 						<div class="sheet-ship-upkeepexpo">
 							<input type="text" spellcheck="false" class="sheet-label sheet-bold" name="attr_upkeep" placeholder="___"></span>
-							<span>(Systems+Crew)/4 </span>
+							<span>(시스템+일행수준)/4 </span>
 							<span>매 휴식시간 시작시 지불.</span>
 						</div>
 					</div>
@@ -977,7 +987,7 @@
 					</div>
 				</div>
 				<!-- SYSTEM 4-->
-				<div class="sheet-ship-system sheet-col31">
+				<div class="sheet-ship-system sheet-col31" >
 					<div class="sheet-blackheader sheet-flex">
 						<input type="text" spellcheck="false" name="attr_system4_desc" class="sheet-label" placeholder="System 4"/>
 						<div class="sheet-module-tick-box">
@@ -989,7 +999,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="sheet-modulelist sheet-col100">
+					<div class="sheet-modulelist sheet-col100" >
 						<div class="sheet-item">
 							<input type="checkbox" name="attr_sys4_mod_1_check" value="1" class="sheet-checkbox"/><span></span>
 							<input type="text" spellcheck="false" class="sheet-itemname" placeholder="_____________________" name="attr_sys4_mod_1_desc"/>
@@ -1018,7 +1028,7 @@
 				</fieldset>
 			</div>
 		</div>
-		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes" style="font-size: 12px; width: 400px;"></textarea>
+		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes"></textarea>
 	</div>
 	<div class="sheet-col45 sheet-flex-wrap">
 		<!-- SHIP ABILITIES -->
@@ -1118,7 +1128,7 @@
 					</div>
 				</fieldset>
 			</div>
-			<button type="roll" name="roll_Fortune" class="sheet-fortunebutton" value='&{template:bitd} {{charname=@{character_name}}} {{fortune=1}} {{subtitle=rolls}} {{title-fortune=1}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{Notes}}}'>행운 굴림</button>
+			<button type="roll" name="roll_Fortune" class="sheet-fortunebutton" value='&{template:bitd} {{charname=@{character_name}}} {{fortune=1}} {{subtitle=rolls}} {{title-fortune=1}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{Notes}}}'>Roll Fortune</button>
 		</div>
 		<div class="sheet-advancement">
 			<div class="sheet-advancement-header sheet-flex sheet-blackheader">
@@ -1231,6 +1241,13 @@
 			<textarea spellcheck="false" name="attr_notes4" placeholder="System notes"></textarea>
 		</div>
 	</div>
+	<div class="sheet-col97 sheet-clocks sheet-def-margin">
+		<div class="sheet-specialheader sheet-label">수배감소시계</div>
+		<fieldset class="repeating_clock">
+		<div class="sheet-clock"><input type="text" spellcheck="false" placeholder="시계 종류" name="attr_name" class="sheet-label"/><div class="sheet-clockprogress"><span>Size</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="4" checked/><span>4-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="6"/><span>6-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-longoption" value="8"/><span>8-segment</span><input type="radio" name="attr_size" class="sheet-text-input sheet-last sheet-longoption" value="12"/><span>12-segment</span><div class="sheet-4clock"><span>Progress</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock1" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock1" class="sheet-text-input sheet-last" value="4"/><span>4</span><div class="sheet-clockpicture"></div></div><div class="sheet-6clock"><span>Progress</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock2" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock2" class="sheet-text-input sheet-last" value="6"/><span>6</span><div class="sheet-clockpicture"></div></div><div class="sheet-8clock"><span>Progress</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="6"/><span>6</span><input type="radio" name="attr_clock3" class="sheet-text-input" value="7"/><span>7</span><input type="radio" name="attr_clock3" class="sheet-text-input sheet-last" value="8"/><span>8</span><div class="sheet-clockpicture"></div></div><div class="sheet-12clock"><span>Progress</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="0" checked/><span>0</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="1"/><span>1</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="2"/><span>2</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="3"/><span>3</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="4"/><span>4</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="5"/><span>5</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="6"/><span>6</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="7"/><span>7</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="8"/><span>8</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="9"/><span>9</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="10"/><span>10</span><input type="radio" name="attr_clock4" class="sheet-text-input" value="11"/><span>11</span><input type="radio" name="attr_clock4" class="sheet-text-input sheet-last" value="12"/><span>12</span><div class="sheet-clockpicture"></div></div></div>
+		</div>
+		</fieldset>
+    </div>
 	<textarea spellcheck="false" class="sheet-notes" name="attr_notes11" placeholder="celestrial system Notes" style="font-size: 12px; width: 800px; height: 80px; margin-bottom: 20px;"></textarea>
 	<!-- FACTIONS -->
 	<div class="sheet-factiontitle sheet-flex">
@@ -1365,6 +1382,7 @@
 				base: {
 					crew_description: '불법상인, 밀수꾼 그리고 봉새 돌파 전문가',
 					crew_xp_condition: '성공적으로 운송 혹은 밀수 작전을 수행함.',
+					defaultgambit: '2',
 					ship_designation: 'CF-350 Series Scarab-class Freighter',
 					ship_size: 'freighter',
 					sys1_mod: '2',
@@ -1508,6 +1526,7 @@
 				base: {
 					crew_description: '반군 그리고 헤게모닉 범죄자들',
 					crew_xp_condition: '헤게모니 지배에 저항하는 임무를 성공적으로 수행한 경우.',
+					defaultgambit: '2',
 					setting_show_extra_sys2_mod_4: '0',
 					ship_designation: 'Converted Khanjigar-class Corvette',
 					ship_size: 'corvette',

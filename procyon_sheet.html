@@ -928,7 +928,7 @@
 			<div class="sheet-ship-middlerow sheet-flex-layout">
 			<!-- Roll system -->
 			    <div class="sheet-ship-gambits sheet-col31" style=" padding: 10px;">
-			        <button type="roll" name="roll_System" type="roll"  value='&{template:bitd} {{charname=@{character_name}}} {{subtitle=Roll System}} {{title-sys=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{시스템}}}' style="color: #81ebfb;">함선 시스템 굴림</button>
+			        <button type="roll" name="roll_System" type="roll"  value='&{template:bitd} {{fortune=1}} {{charname=@{character_name}}} {{subtitle=Roll System}} {{title-sys=1}} {{position=?{처지|안정적|모험적|필사적}}} {{effect=?{효과|제한적|표준적|극적}}} {{roll1=[[[[{?{Number of dice|0|1|2|3|4|5|6},1}kl1]]d6]]}} {{roll2=[[[[{[[?{Number of dice}]]-1,1}kl1]]d6]]}} {{roll3=[[[[{[[?{Number of dice}-2]],1}kl1]]d6]]}} {{roll4=[[[[{[[?{Number of dice}-3]],1}kl1]]d6]]}} {{roll5=[[[[{[[?{Number of dice}-4]],1}kl1]]d6]]}} {{roll6=[[[[{[[?{Number of dice}-5]],1}kl1]]d6]]}} {{zerodice=[[[[{[[1-(?{Number of dice})]],1}kl1]]d6]], [[[[{[[1-(?{Number of dice})]],1}kl1]]d6]]}} {{notes=?{note}}}' style="color: #81ebfb;">함선 시스템 굴림</button>
 	        	</div>
 		    	<div class="sheet-col31 sheet-ship-gambits" >
 			    	<div class="sheet-blackheader sheet-label">묘수</div>
@@ -1028,7 +1028,7 @@
 				</fieldset>
 			</div>
 		</div>
-		<textarea spellcheck="false" class="sheet-notes" name="attr_notes" placeholder="Notes" style="width : 450px;"></textarea>
+		<textarea spellcheck="false" class="sheet-notes" name="ship_notes" placeholder=" Ship Notes" style="width : 450px;"></textarea>
 	</div>
 	<div class="sheet-col45 sheet-flex-wrap">
 		<!-- SHIP ABILITIES -->

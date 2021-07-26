@@ -8,8 +8,8 @@
 
 함선시트 통신, 엔진, 무장, 선체 옆의 체크칸은 윗쪽은 품질 (함선 시스템 개수), 아래쪽은 피해 단계입니다.
 
-# procyon_sheet.html : 더 수정된 버전
-*이 시트는 기존 시트를 번역한 것에 추가하여 구조도 크게(?) 변경하였으므로 별도로 저장해둡니다. 
+# procyon_sheet.html, procyon_sheet.css를 오른쪽 상단 RAW 상태로 복사하셔서,
+# 롤20방의 설정-게임설정-Character Sheet Template을 Custum으로 변경 후, html, css 탭에 각각 붙여넣어주시면 적용됩니다.
 
 *21.05.23. 
 
